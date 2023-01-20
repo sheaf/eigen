@@ -1725,8 +1725,12 @@ library
       cbits/eigen-sparse.cpp
       cbits/eigen-la.cpp
       cbits/eigen-sparse-la.cpp
-    extra-libraries:
-      stdc++
+    if impl(ghc >= 9.4)
+      build-depends:
+        system-cxx-std-lib
+    else
+      extra-libraries:
+        stdc++
 
 Test-Suite test-solve
   type:               exitcode-stdio-1.0
