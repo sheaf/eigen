@@ -55,6 +55,7 @@ module Eigen.Matrix
 
   , (!)
   , coeff
+  , unsafeCoeff
   , generate
   , sum
   , prod
