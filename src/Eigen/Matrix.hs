@@ -96,7 +96,11 @@ module Eigen.Matrix
 import Control.Monad (when)
 import Control.Monad.ST (ST)
 import Prelude hiding
-  (map, null, filter, length, foldl, any, all, sum)
+  ( map, null, filter, length, foldl, any, all, sum
+#if MIN_VERSION_base(4,20,0)
+  , foldl'
+#endif
+  )
 import Control.Monad (forM_)
 import Control.Monad.Primitive (PrimMonad(..))
 import Data.Binary (Binary(..))

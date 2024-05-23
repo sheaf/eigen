@@ -3,10 +3,10 @@
 {-# LANGUAGE DataKinds           #-}
 {-# LANGUAGE GADTs               #-}
 {-# LANGUAGE KindSignatures      #-}
+{-# LANGUAGE PolyKinds           #-}
 {-# LANGUAGE RecordWildCards     #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TypeApplications    #-}
-{-# LANGUAGE TypeInType          #-}
 {-# LANGUAGE TypeOperators       #-}
 
 #if __GLASGOW_HASKELL__ >= 805
@@ -46,7 +46,7 @@ module Eigen.Matrix.Mutable
 
 import Eigen.Internal
   ( Elem
-  , C(..)
+  , C(..), toC, fromC
   , natToInt
   , Row(..)
   , Col(..)

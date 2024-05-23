@@ -6,7 +6,7 @@
 
 {-# LANGUAGE AllowAmbiguousTypes       #-}
 {-# LANGUAGE BangPatterns              #-}
-{-# LANGUAGE CPP                       #-} 
+{-# LANGUAGE CPP                       #-}
 {-# LANGUAGE EmptyDataDecls            #-}
 {-# LANGUAGE FlexibleContexts          #-}
 {-# LANGUAGE FlexibleInstances         #-}
@@ -15,6 +15,7 @@
 {-# LANGUAGE GADTs                     #-}
 {-# LANGUAGE KindSignatures            #-}
 {-# LANGUAGE LambdaCase                #-}
+{-# LANGUAGE PolyKinds                 #-}
 {-# LANGUAGE MagicHash                 #-}
 {-# LANGUAGE MultiParamTypeClasses     #-}
 {-# LANGUAGE Rank2Types                #-}
@@ -22,7 +23,6 @@
 {-# LANGUAGE StandaloneDeriving        #-}
 {-# LANGUAGE TypeApplications          #-}
 {-# LANGUAGE TypeFamilyDependencies    #-}
-{-# LANGUAGE TypeInType                #-}
 {-# LANGUAGE UnboxedTuples             #-}
 {-# LANGUAGE UndecidableInstances      #-}
 
